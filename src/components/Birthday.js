@@ -14,18 +14,21 @@ function Birthday() {
     };
 
     return (
-        <div className="main-container">
-            <h3>5 Birthday Today</h3>
-            {people.map((item) => (
-                // console.log(item);
-                <article key={item.id} className="person">
-                    <img src={item.avatar} alt={item.first_name} />
-                    <h3>
-                        {item.first_name} {item.last_name}
-                    </h3>
-                    <h4>Send wishes at: {item.email}</h4>
-                </article>
-            ))}
+        <div>
+            <section className="main-container">
+                <h3>Today's Birthday Reminder</h3>
+                <div className="person-container">
+                    {people.map((item) => (                        
+                        <article key={item.id} className="person">
+                            <img src={item.avatar} alt={item.first_name} />
+                            <div className="person-details">
+                                <h3>{item.first_name} {item.last_name}</h3>
+                                <h4>Email: {item.email}</h4>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 }
