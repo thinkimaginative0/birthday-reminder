@@ -7,6 +7,7 @@ function Birthday() {
         fetchuser();
     }, []);
 
+    // Fetch person details from the api
     const fetchuser = async () => {
         const response = await fetch("https://reqres.in/api/users/");
         const result = await response.json();
