@@ -2,7 +2,7 @@
 
 This will display birthday reminder and it will capture data from api and show their name and email address to send wishes. 
 
-Url : https://think-birthday-reminder.netlify.app/
+Link : https://think-birthday-reminder.netlify.app/
 
 ### `npm start`
 
